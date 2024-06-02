@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+
+        public static void main(String[] args) {
+
+            Scanner scan = new Scanner(System.in);
+
+            System.out.print("Введите первое число: ");
+            float a = scan.nextFloat();
+
+            System.out.print("Введите второе число: ");
+            float b = scan.nextFloat();
+
+
+            if (a < b) {
+                System.out.println("a < b" + "\n");
+            } else if (a > b) {
+                System.out.println("a > b" + "\n");
+            } else {
+                System.out.println("a = b" + "\n");
+            }
+
+
+            float res1 = a + b;
+            float res2 = a - b;
+            float res3 = a * b;
+            float res4 = a / b;
+
+            System.out.println("Сложение: " + res1 + "\n" + "Вычитание: " + res2 + "\n" + "Умножение: " + res3 + "\n" + "Деление: " + res4);
+
+        }
+}
